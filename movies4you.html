@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)file:///C:/Users/user/Desktop/movies4you/project.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">	
+<title>movies4you</title>
+<style>
+	body{
+		background:linear-gradient(black ,blue);
+}
+</style>
+</head>
+    
+
+<body><h1 style="font-size: 600%; color: greenyellow;font-family:Comic sans Ms" ;="">
+Movies4you
+</h1>
+	<form>
+		<input type="text" id="search" name="search" placeholder="search movies...">
+		
+		<button type="submit">search</button>
+	</form>
+	<!--..movie results will be displayed here..-->
+		<div id="movie-results"></div>
+		<script>
+			//java script code for handling search functionality
+			var searchForm=
+			document.querySelector('form');
+			var searchInput=
+			document.querySelector('#search');
+			var movieResults=
+			document.querySelector('#movie-results');
+			searchForm.addEventListener('submit', function(event){
+				event.preventDefault();
+				//get the seach query
+				var searchQuery=
+				searchInput.value;
+				//perform search and display results
+				movieResults.innerHTML=
+				'searching for movies related to:'+
+				searchQuery;
+				//you can implemnt your search logic here and display results dynamically
+				//clear the search input field
+				searchInput.value=";
+			});
+			
+		</script>
+		<p style="font-size: 150%; color: greenyellow;font-family:Century Gothic" ;="">Popular
+	</p>
+		<img src="./movies4you_files/4bles.png" alt="expendables" width="150" height="150" ;="">
+		<img src="./movies4you_files/linc.png" alt="lincoln lawyer" width="150" height="150" ;="">	
+		<img src="./movies4you_files/idris.png" alt="hijack" width="150" height="150" ;="">
+		<img src="./movies4you_files/shelby.png" alt="oppenheimer" width="150" height="150" ;="">
+		<img src="./movies4you_files/robbie gosling.png" alt="barbie" width="150" height="150" ;="">
+		<img src="./movies4you_files/summer.png" alt="Summer i turned pretty" width="150" height="150" ;="">
+		<img src="./movies4you_files/tommy.JPEG" alt="power book IV Force" width="150" height="150" ;="">
+		<img src="./movies4you_files/vamp.png" alt="The Vampire Hunter" width="150" height="150" ;="">
+		<img src="./movies4you_files/wheel.png" alt="The Wheel of Time" width="150" height="150" ;="">
+		<img src="./movies4you_files/spi.png" alt="Into the spiderverse" width="150" height="150" ;="">
+		<img src="./movies4you_files/avengers.JPEG" alt="avengers endgame" width="150" height="150" ;="">
+		<img src="./movies4you_files/xxx.png" width="150" height="150" ;="">
+		<img src="./movies4you_files/meg.png" width="150" height="150" ;="">
+		<img src="./movies4you_files/dead.png" width="150" height="150" ;="">
+		<img src="./movies4you_files/death.png" width="150" height="150" ;="">
+		<img src="./movies4you_files/bmf.png" width="150" height="150" ;="">
+		<img src="./movies4you_files/AQUA.png" width="150" height="150" ;="">
+		<img src="./movies4you_files/wid.png" width="150" height="150" ;="">
+		<img src="./movies4you_files/jon.png" width="150" height="150" ;="">
+		<img src="./movies4you_files/fast.png" width="150" height="150" ;="">
+		<img src="./movies4you_files/last.png" width="150" height="150" ;="">
+		<img src="./movies4you_files/pool.png" width="150" height="150" ;="">
+	<p></p>
+	<style>
+	form{
+		width:300px
+		margin:0 auto;
+	}
+	input[type="text"],
+	input[type="email"],
+	input[type="password"]{
+		width:100%
+		padding:10px;
+		margin-bottom:10px;
+	}
+input [type="submit"]{
+	background-color:
+	color:white;
+	padding:10px 20px;
+	border:none;
+	cursor:pointer;
+}
+.account-details{
+	margin-top:20px;
+
+}
+</style>
+<form>
+	<label for="name">Name:</label>
+	<input type="text" id="name" name="name" required="">
+		<label for="email">Email:</label>
+	<input type="email" id="email" name="email" required="">
+		<label for="password">Password:</label>
+	<input type="password" id="password" name="password" required="">
+	<input type="submit" value="register">
+</form>
+	<div class="account-details">
+		<p>account Details</p>
+		<p>Name:<span id="account-name"></span></p>
+  <p>Email:<span id="account Email"></span></p>
+</div>
+<script>
+	document.querySelector('form').addEventListener('submit',function(event){
+		event.preventDefault();
+		var name=document.getElementByld('name').value;
+		var email=document.getElementByld('Email').value;
+		document.getElementByld('account-email').textContext=email;
+		document.querySelector('form').reset();
+	});
+</script>
+
+	
+	</body></html>
